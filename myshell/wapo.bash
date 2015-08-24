@@ -16,12 +16,6 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 
-#
-# Initialize docker with boot2docker variables
-#
-function b2di() {
-    eval "$(boot2docker shellinit)"
-}
 
 #
 # ===========================================================
