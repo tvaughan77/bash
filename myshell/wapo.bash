@@ -4,8 +4,11 @@
 export DOCKER_HOST="tcp://boot2docker:2375"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/
 export VAGRANT_DEFAULT_PROVIDER=parallels
-export GOPATH=~/workspace/go
+export workspace=~/workspace
+export GOPATH=$workspace/go
 export PATH=$JAVA_HOME/bin:$PATH:/Users/vaughant/workspace/go/src/github.com/coreos/fleet/bin/:/Users/vaughant/workspace/go/bin
+
+alias vpn='sudo openconnect --user vaughant --juniper https://ra.washpost.com'
 
 #
 # Turn on git bash completion
