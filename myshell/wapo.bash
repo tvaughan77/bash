@@ -19,6 +19,23 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 
+export ct="Content-Type: application/json"
+function asaLocal() {
+  cd $workspace/arc-story-api
+  export server="http://`docker-machine ip default`:8080"
+  export auth=`head -n 1 arc-story-api-server/src/main/resources/allowed-peers.properties  | tr '=' ':'`
+  echo "export xat='X-Auth-Token: foo'"
+  echo "curl -vvv -u \"$auth\" -H \"$ct\" -H \"$xat\" $server/api/v1/story"
+}
+
+function asaAlpha() {
+  cd $workspace/arc-story-api
+  export server=https://arc-story-api-alpha.internal.arc.nile.works
+  export auth=`head -n 1 arc-story-api-server/src/main/resources/allowed-peers.properties  | tr '=' ':'`
+  echo "export xat='X-Auth-Token: foo'"
+  echo "curl -vvv -u \"$auth\" -H \"$ct\" -H \"$xat\" $server/api/v1/story"
+}
+
 
 #
 # ===========================================================
