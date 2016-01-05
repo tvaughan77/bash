@@ -25,3 +25,13 @@ fi
 #
 # "Bash Git Prompt" end
 #
+
+
+#
+# Turn on git bash completion
+# Install with "brew install git bash-completion"
+# See https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
+#
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi

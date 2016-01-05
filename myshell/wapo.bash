@@ -10,15 +10,6 @@ export PATH=$JAVA_HOME/bin:$PATH:/Users/vaughant/workspace/go/src/github.com/cor
 
 alias vpn='sudo openconnect --user vaughant --juniper https://ra.washpost.com'
 
-#
-# Turn on git bash completion
-# Install with "brew install git bash-completion"
-# See https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
-#
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
-
 export ct="Content-Type: application/json"
 function asaLocal() {
   cd $workspace/arc-story-api
@@ -65,19 +56,3 @@ function switchJava() {
 # Java 6/7/8 switching and upgrading support functions
 # ===========================================================
 #
-
-#
-# Assumes you've done the PR merge on github while sitting in a branch, then
-# switches back to master, pulls the latest and deletes the old branch
-#
-function closeBranch() {
-  currentBranch=`git rev-parse --abbrev-ref HEAD`
-  if [[ "$currentBranch" == 'master' ]]; then
-    echo "Don't try to close the master branch, dummy."
-  else
-    git checkout master
-    git pull
-    git branch -D $currentBranch
-  fi
-}
-
