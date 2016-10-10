@@ -1,6 +1,6 @@
 alias git="hub"
-alias gpum="git pull upstream master"
-alias gpom="git push origin master"
+alias gpom="git pull origin master"
+alias gptm="git push tom master"
 alias gcm="git checkout master"
 alias gpl="git log --pretty=oneline --graph --all"
 alias gpr="git pull-request -o"
