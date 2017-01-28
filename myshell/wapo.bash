@@ -28,31 +28,3 @@ function asaAlpha() {
 }
 
 
-#
-# ===========================================================
-# Java 6/7/8 switching and upgrading support functions
-# vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-#
-function java6() {
-  switchJava 1.6
-}
-function java7() {
-  switchJava 1.7
-}
-function java8() {
-  switchJava 1.8
-}
-function switchJava() {
-  unamestr=`uname`
-  if [[ "$unamestr" == 'Darwin' ]]; then
-    export JAVA_HOME=`/usr/libexec/java_home -v $1`
-    java -version
-  else
-    echo "Unsupported operating system"
-  fi
-}
-#
-# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-# Java 6/7/8 switching and upgrading support functions
-# ===========================================================
-#

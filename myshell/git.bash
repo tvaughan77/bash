@@ -1,3 +1,12 @@
+alias git="hub"
+alias gpom="git pull origin master"
+alias gptm="git push tom master"
+alias gcm="git checkout master"
+alias gpl="git log --pretty=oneline --graph --all"
+alias gpr="git pull-request -o"
+alias gs="git status"
+alias gb="git branch"
+
 #
 # Assumes you've done the PR merge on github while sitting in a branch, then
 # switches back to master, pulls the latest and deletes the old branch
