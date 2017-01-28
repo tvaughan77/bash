@@ -55,3 +55,5 @@ And then install:
 * Slack
 * Spotify
 * Netbeans
+
+And, for OSX, to show all files in finder: `defaults write com.apple.finder AppleShowAllFiles YES`
