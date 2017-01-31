@@ -8,7 +8,7 @@ source ~/.myshell/ruby.bash
 
 # My career-specific shortcuts
 source ~/.myshell/upside.bash
-source ~/.myshell/wapo.bash
+#source ~/.myshell/wapo.bash
 
 # Put your secrets in secrets.bash, but don't check it in to git, obviously
 source ~/.myshell/secrets.bash 2> /dev/null

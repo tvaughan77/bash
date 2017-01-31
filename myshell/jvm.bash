@@ -13,6 +13,8 @@ alias mdt="mvn dependency:tree | vi -"
 alias mrpp="mvn release:prepare && mvn release:perform"
 alias mhep="mvn help:effective-pom | vi -"
 
+export JAVA_HOME=`/usr/libexec/java_home`
+
 #
 # ===========================================================
 # Java 6/7/8 switching and upgrading support functions
