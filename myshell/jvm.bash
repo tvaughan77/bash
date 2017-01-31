@@ -2,6 +2,8 @@ alias gcb="./gradlew clean build"
 alias gcbj="./gradlew clean build jacocoTestReport"
 alias glocal='./gradlew snapshot build jacocoTestReport jacocoRootReport publishToMavenLocal'
 alias grelease='gradle clean final build publish'
+# release candidate
+alias grc='gradle clean test candidate publish'
 alias mci="mvn clean install"
 alias mcio="mvn -o clean install"
 alias mcd="mvn clean deploy"
