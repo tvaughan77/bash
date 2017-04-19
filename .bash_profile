@@ -5,6 +5,7 @@ source ~/.myshell/git.bash
 source ~/.myshell/jvm.bash
 source ~/.myshell/python.bash
 source ~/.myshell/ruby.bash
+source ~/.myshell/mobile.bash
 
 # My career-specific shortcuts
 source ~/.myshell/upside.bash

@@ -57,3 +57,14 @@ And then install:
 * Netbeans
 
 And, for OSX, to show all files in finder: `defaults write com.apple.finder AppleShowAllFiles YES`
+
+## Optional Mobile Dev Support
+Comment in the `source ~/.myshell/mobile.bash`
+1. Install Android Studio
+2. Install Xcode command line tools `xcode-select —install`
+3. brew install carthage
+4. brew install node
+5. npm install -g appium
+6. npm install -g appium-doctor
+7. appium-doctor  . . . should report everything okay.  Fix any requirements not met
+8. [Optional] Install appium-desktop from https://github.com/appium/appium-desktop/releases
