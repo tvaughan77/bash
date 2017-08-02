@@ -10,6 +10,8 @@ cd
 
 brew install hub bash-git-prompt gpg wget
 
+brew install git-secrets
+
 git clone git@github.com:tvaughan77/bash.git
 
 cp ~/.bash_profile ~/.bash_profile.bak
