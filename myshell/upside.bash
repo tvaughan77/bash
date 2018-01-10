@@ -6,6 +6,8 @@ export UPSIDE_MAVEN_USER=tvaughan
 # and /usr/local/bin is already in my path (obviously)
 #export PATH=$PATH:/Users/tvaughan/workspace/terraform
 
+export UPSIDE_BASH_UTILS="/Users/tvaughan/workspace/upside/bash-utils"
+
 export TF_VAR_region="us-east-1"
 export TERRAFORM_CONFIG_LOCAL_REPO="/Users/tvaughan/workspace/upside/aws-config-terraform"
 
