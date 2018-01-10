@@ -2,7 +2,17 @@
 export UPSIDE_MAVEN_USER=tvaughan
 
 # Downloaded from https://www.terraform.io/downloads.html 
-export PATH=$PATH:/Users/tvaughan/workspace/terraform
+# My original installation; I since switched to `brew install terraform` so it's at /usr/local/bin/terraform
+# and /usr/local/bin is already in my path (obviously)
+#export PATH=$PATH:/Users/tvaughan/workspace/terraform
+
+export TF_VAR_access_key=AKIAITWAACM5BTHHJQGQ
+export TF_VAR_secret_key=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
+export TF_VAR_region="us-east-1"
+export TERRAFORM_CONFIG_LOCAL_REPO="/Users/tvaughan/workspace/upside/aws-config-terraform"
+export TERRAFORM_CONFIG_GITHUB_ACCESS_TOKEN="d4ef9165bd12ddb14277ba10aa0e26dd1bbf1b58"
+
+alias tf="terragrunt"
 
 # shell out to our gateway server
 alias gw="ssh -i ~/.ssh/upside-us-east-1-gateway-20170131.pem ec2-user@ec2-54-208-64-212.compute-1.amazonaws.com"

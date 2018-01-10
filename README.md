@@ -1,7 +1,6 @@
 # bash
 My bash settings
 
-
 New setup (installs homebrew first to facilitate rest of installation)
 ```
 cd
@@ -41,6 +40,8 @@ curl -sSL https://get.rvm.io | bash -s stable
 Optional AWS support that's pretty handy:
 ```
 git clone https://github.com/jorgebastida/awslogs.git && cd awslogs && pip install .
+
+brew install terraform
 ```
 
 ## Don't Forget
@@ -48,6 +49,7 @@ Installing on a new computer?  Don't forget to bring (*with sneakerware*):
 
 * ~/.ssh
 * ~/.aws
+* Export gpg / pgp keychain and import keys on new machine
 
 And then install:
 * Dropbox
