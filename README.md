@@ -24,6 +24,13 @@ ln -s bash/.vimrc ~/.vimrc
 wget -O - https://raw.githubusercontent.com/nvbn/thefuck/master/install.sh | sh - && $0
 ```
 
+Add git-secrets pre-commit hooks to this bash directory
+```
+cd /path/to/my/bash/clone
+git secrets --install
+git secrets --register-aws
+```
+
 Optional Python support tools:
 ```
 pip install virtualenvwrapper

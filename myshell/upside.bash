@@ -11,8 +11,6 @@ export TERRAFORM_CONFIG_LOCAL_REPO="/Users/tvaughan/workspace/upside/aws-config-
 
 alias tf="terragrunt"
 
-# shell out to our gateway server
-alias gw="ssh -i ~/.ssh/upside-us-east-1-gateway-20170131.pem ec2-user@ec2-54-208-64-212.compute-1.amazonaws.com"
 
 function rup {
     sudo pip install runbookcli --upgrade
