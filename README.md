@@ -51,6 +51,11 @@ git clone https://github.com/jorgebastida/awslogs.git && cd awslogs && pip insta
 brew install terraform
 ```
 
+Optional Pakcer installation
+```
+brew install packer
+```
+
 ## Don't Forget
 Installing on a new computer?  Don't forget to bring (*with sneakerware*):
 
