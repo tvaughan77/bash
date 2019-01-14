@@ -26,6 +26,17 @@ ln -s bash/myshell ~/.myshell
 ln -s bash/.vimrc ~/.vimrc
 ```
 
+Install java8 (or whatever):
+```
+brew tap caskroom/versions
+brew cask install java8
+```
+
+Install maven:
+```
+brew install maven
+```
+
 Add git-secrets pre-commit hooks to this bash directory
 ```
 cd /path/to/my/bash/clone
@@ -49,8 +60,11 @@ curl -sSL https://get.rvm.io | bash -s stable
 Optional AWS support that's pretty handy:
 ```
 git clone https://github.com/jorgebastida/awslogs.git && cd awslogs && pip install .
+```
 
-brew install terraform
+Optional Terraform and Terragrunt installation:
+```
+brew install terraform terragrunt
 ```
 
 Optional Pakcer installation
