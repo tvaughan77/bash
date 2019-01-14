@@ -64,8 +64,8 @@ Installing on a new computer?  Don't forget to bring (*with sneakerware*):
 * Export gpg / pgp keychain and import keys on new machine
 
 And then install:
-* Dropbox
 * SpiderOak
+* Keybase.io
 * LastPass
 * Evernote
 * Slack
