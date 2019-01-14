@@ -12,7 +12,8 @@ brew install hub \
     gpg \
     wget \
     jq \
-    git-secrets
+    git-secrets \
+    thefuck
 
 git clone git@github.com:tvaughan77/bash.git
 
@@ -23,8 +24,6 @@ cp bash/.bash_profile ~/
 ln -s bash/myshell ~/.myshell
 
 ln -s bash/.vimrc ~/.vimrc
-
-wget -O - https://raw.githubusercontent.com/nvbn/thefuck/master/install.sh | sh - && $0
 ```
 
 Add git-secrets pre-commit hooks to this bash directory
