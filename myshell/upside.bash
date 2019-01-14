@@ -118,11 +118,27 @@ function rao {
     fi
 }
 
-function bake {
+function bakesvc {
     if [ $# -ne 2 ]; then
-        echo "Usage: bake <service> <version>"
+        echo "Usage: bakesvc <service> <version>"
     else
-        upside service bakery -s $1 -t v$2 -i ami-17227001
+        upside service bakery -s $1 -t v$2 
+    fi
+}
+
+function updatesvc {
+    if [ $# -ne 3 ]; then
+        echo "Usage: updatesvc <service> <version no leading v> <tier>"
+    else
+        upside service update2 -s $1 -v $2 -t $3
+    fi
+}
+
+function newsvcversion {
+    if [ $# -ne 1 ]; then
+        echo "Usage: newsvcversion <service>"
+    else
+        upside service.new_version -s $1
     fi
 }
 
