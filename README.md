@@ -7,9 +7,12 @@ cd
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install hub bash-git-prompt gpg wget jq
-
-brew install git-secrets
+brew install hub \
+    bash-git-prompt \
+    gpg \
+    wget \
+    jq \
+    git-secrets
 
 git clone git@github.com:tvaughan77/bash.git
 
