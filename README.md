@@ -12,6 +12,7 @@ brew install hub \
     gpg \
     wget \
     jq \
+    ag \
     git-secrets \
     thefuck
 
@@ -44,9 +45,13 @@ git secrets --install
 git secrets --register-aws
 ```
 
-Optional Python support tools:
+Python (with pyenv instead of the bullshit default OSX stuff):
 ```
-pip install virtualenvwrapper
+brew install zlib
+brew install pyenv
+CPPFLAGS="-I$(brew --prefix zlib)/include" pyenv install -v 2.7.14
+CPPFLAGS="-I$(brew --prefix zlib)/include" pyenv install -v 3.6.0
+brew install pyenv-virtualenvwrapper
 # then comment in the line in ./.bash_profile `source ~/.myshell/python.bash`
 ```
 
