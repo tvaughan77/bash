@@ -1,5 +1,11 @@
 # Upside settings
 export UPSIDE_MAVEN_USER=tvaughan
+export workspace=~/workspace/upside
+
+#
+# Downloaded MySQL workbench on my new MBP 2019 and this was the stack overflow answer on how to get CLI 'mysql' to work:
+#
+export PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
 
 # Downloaded from https://www.terraform.io/downloads.html 
 # My original installation; I since switched to `brew install terraform` so it's at /usr/local/bin/terraform

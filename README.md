@@ -14,7 +14,7 @@ brew install hub \
     jq \
     ag \
     git-secrets \
-    thefuck
+    thefuck 
 
 git clone git@github.com:tvaughan77/bash.git
 
@@ -31,6 +31,7 @@ Install java8 (or whatever):
 ```
 brew tap caskroom/versions
 brew cask install java8
+brew install jenv
 ```
 
 Install maven:
@@ -76,6 +77,14 @@ Optional Pakcer installation
 ```
 brew install packer
 ```
+
+Optional Kubernetes CLI Tools
+```
+brew install derailed/k9s/k9s
+brew install kubectx
+brew install derailed/popeye/popeye
+```
+
 
 ## Don't Forget
 Installing on a new computer?  Don't forget to bring (*with sneakerware*):
