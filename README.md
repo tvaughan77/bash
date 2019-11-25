@@ -29,8 +29,11 @@ ln -s bash/.vimrc ~/.vimrc
 
 Install java8 (or whatever):
 ```
-brew tap caskroom/versions
-brew cask install java8
+brew tap adoptopenjdk/openjdk
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+#brew cask install adoptopenjdk/openjdk/adoptopenjdk9
+#brew cask install adoptopenjdk/openjdk/adoptopenjdk10
+#brew cask install adoptopenjdk/openjdk/adoptopenjdk11
 brew install jenv
 ```
 
@@ -73,7 +76,7 @@ Optional Terraform and Terragrunt installation:
 brew install terraform terragrunt
 ```
 
-Optional Pakcer installation
+Optional Packer installation
 ```
 brew install packer
 ```
