@@ -1,6 +1,5 @@
 alias git="hub"
 alias gpom="git pull origin master"
-alias gptm="git push tom master"
 alias gcm="git checkout master"
 alias gpl="git log --pretty=oneline --graph --all"
 alias gpr="git pull-request -o"
@@ -8,6 +7,10 @@ alias gs="git status"
 alias gb="git branch"
 alias gpb="git push origin `git rev-parse --abbrev-ref HEAD`"
 alias gpbf="git push -f origin `git rev-parse --abbrev-ref HEAD`"
+
+function gco() {
+    git branch | grep -m1 $1 | xargs git checkout
+}
 
 #
 # Assumes you've done the PR merge on github while sitting in a branch, then
