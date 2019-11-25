@@ -7,10 +7,3 @@ alias dkcu="docker-compose up"
 #alias dl="aws ecr get-login --region us-east-1"
 alias dl="eval $(aws ecr get-login --region us-east-1 --no-include-email)"
 
-#
-# Note - this appears to be obsolete; modern OSX docker installation "just works"
-# Initialize docker with docker variables
-#
-#function dmi() {
-#    eval "$(docker-machine env default)"
-#}
