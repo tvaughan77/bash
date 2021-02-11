@@ -7,11 +7,6 @@ export workspace=~/workspace/upside
 #
 export PATH=$PATH:/Applications/MySQLWorkbench.app/Contents/MacOS
 
-# Downloaded from https://www.terraform.io/downloads.html 
-# My original installation; I since switched to `brew install terraform` so it's at /usr/local/bin/terraform
-# and /usr/local/bin is already in my path (obviously)
-#export PATH=$PATH:/Users/tvaughan/workspace/terraform
-
 # This is for kubectl to manage EKS clusters
 export PATH=$PATH:/Users/tvaughan/workspace/aws-iam-authenticator
 
@@ -23,6 +18,12 @@ export TERRAFORM_CONFIG_LOCAL_REPO="/Users/tvaughan/workspace/upside/aws-config-
 alias gw="ssh bastion"
 alias bastion="ssh bastion"
 alias tf="terragrunt"
+alias tgclean="find . -type d -name ".terragrunt-cache" -prune -exec rm -rf {} \;"
+
+function je2ne {
+    pbpaste | jq '.exception' | sed 's/\\n/\
+/g' | sed 's/\\t/    /g' | sed 's/"//g'
+}
 
 function rup {
     sudo pip install runbookcli --upgrade
@@ -121,14 +122,6 @@ function rao {
         echo "Usage: rao <user_uuid> <offer_uuid>";
     else
         runbook abandon_offer prod $1 $2;
-    fi
-}
-
-function newsvcversion {
-    if [ $# -ne 1 ]; then
-        echo "Usage: newsvcversion <service>"
-    else
-        upside service.new_version -s $1
     fi
 }
 

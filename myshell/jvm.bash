@@ -1,10 +1,3 @@
-alias gcb="./gradlew clean build"
-alias gcbj="./gradlew clean build jacocoTestReport"
-alias glocal='./gradlew clean snapshot build jacocoTestReport jacocoRootReport publishToMavenLocal'
-alias glocald='./gradlew clean devSnapshot build jacocoTestReport jacocoRootReport publishToMavenLocal'
-alias grelease='gradle clean final build publish'
-# release candidate
-alias grc='gradle clean test candidate publish'
 alias mci="mvn clean install"
 alias mcio="mvn -o clean install"
 alias mcd="mvn clean deploy"
@@ -16,6 +9,9 @@ alias mhep="mvn help:effective-pom | vi -"
 
 export JAVA_HOME=`/usr/libexec/java_home`
 export PATH=$PATH:$JAVA_HOME/bin
+
+# Assuming you brew install groovy
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 # Assuming you brew install jenv
 export PATH="$HOME/.jenv/bin:$PATH"
